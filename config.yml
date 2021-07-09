@@ -1,0 +1,16 @@
+title: confirmation in data validation
+description: ordinary  confirmation
+template:
+  repo: confirmation-in-data-validation-template
+  name: confirmation-in-data-validation
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
